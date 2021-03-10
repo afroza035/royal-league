@@ -6,6 +6,7 @@ import { useParams } from 'react-router';
 import Male from '../images/male.png';
 import './LeagueDetails.css';
 import Female from '../images/female.png';
+import Banner from '../components/Banner/Banner';
 
 const LeagueDetail = () => {
     const { leagueId } = useParams();
@@ -24,7 +25,7 @@ const LeagueDetail = () => {
     return (
         <div className="full-league-detail">
             <div className="img-banner">
-                <img src={strBanner} alt="" />
+                {strBanner === null ? <Banner></Banner> : <img src={strBanner} alt="" />}
                 <div className="row card-style d-flex align-items-center">
                     <div className="col-md-6">
                         <h2>{strLeague}</h2>
@@ -34,7 +35,7 @@ const LeagueDetail = () => {
                         <p><FontAwesomeIcon icon={faMars} /> Gender: {strGender}</p>
                     </div>
                     <div className="col-md-6 small-img">
-                        {strGender === "Male" ? <img src={Male} alt="" /> : <img src={Female} alt="" />}
+                        {strGender === "Female" ? <img src={Female} alt="" /> : <img src={Male} alt="" />}
                     </div>
                 </div>
                 <div className="text-area">
