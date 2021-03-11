@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faFlag, faFutbol, faMars, faNeuter } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
@@ -17,7 +17,7 @@ const LeagueDetail = () => {
             .then(res => res.json())
             .then(data => setLeague(data.leagues[0]))
     }, [])
-    const { strBanner, strLeague, intFormedYear, strCountry, strSport, strGender, strLogo, strDescriptionEN, strDescriptionFR } = league;
+    const { strBanner, strLeague, intFormedYear, strCountry, strSport, strGender, strLogo, strDescriptionEN, strDescriptionFR, strFacebook, strTwitter, strYoutube } = league;
 
     return (
         <div className="full-league-detail">
@@ -42,9 +42,9 @@ const LeagueDetail = () => {
                 </div>
             </div>
             <div className="footer">
-                <a target="_blank" href="http://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a>
-                <a target="_blank" href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a>
-                <a target="_blank" href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a>
+                <a target="_blank" href={`https://${strFacebook}`}><FontAwesomeIcon icon={faFacebook} /></a>
+                <a target="_blank" href={`https://${strTwitter}`}><FontAwesomeIcon icon={faTwitter} /></a>
+                <a target="_blank" href={`https://${strYoutube}`}><FontAwesomeIcon icon={faYoutube} /></a>
             </div>
         </div>
     );
