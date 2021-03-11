@@ -1,7 +1,7 @@
-.img-banner img{
+/* .img-banner img{
     width: 100%;
     height: 400px;
-}
+} */
 .full-league-detail{
     background-color: #006B38FF;
     
@@ -9,18 +9,17 @@
 .small-img img{
     width: 100%;
     height: 300px;
-}
+} 
 .card-style{
     background-color: #C7C7C7;
-    padding: 30px;
-    margin: 100px;
+    padding: 20px;
+    margin: 30px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 .text-area{
     color: white;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin: 30px;
     padding-bottom: 60px;
 }
 .footer{

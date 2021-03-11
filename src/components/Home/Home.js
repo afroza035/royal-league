@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div className="row league-background d-flex justify-content-center">
+            <div className="row league-background d-flex justify-content-center p-2">
                 {
                     selectLeagues.map(leagues => <League league={leagues} key={leagues.idLeague}></League>)
                 }

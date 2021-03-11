@@ -15,3 +15,8 @@
     font-size: 50px;
     color: wheat;
 }
+.logoImg-style{
+    width: 300px !important;
+    height: 200px !important;
+    padding: 20px;
+}

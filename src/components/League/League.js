@@ -21,7 +21,7 @@ const Leagues = (props) => {
     return (
         <div className="col-md-3 league-part">
             <div className="p-2">
-                <img src={strLogo} alt="" />
+                <img className="logo-style" src={strLogo} alt="" />
                 <h2>{strLeague}</h2>
                 <p>Sports type: {strSport}</p>
                 <Link to={`/league/${idLeague}`}><button className="btn btn-info">Explore <FontAwesomeIcon icon={faArrowRight} /></button></Link>
