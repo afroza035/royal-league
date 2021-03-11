@@ -22,7 +22,7 @@ const LeagueDetail = () => {
     return (
         <div className="full-league-detail">
             <div className="img-banner">
-                <Banner logoImg={strLogo} logoImgShow={true}></Banner>
+                <Banner bannerImg = {strBanner} logoImg={strLogo} logoImgShow={true}></Banner>
                 {/* {strBanner === null ? <Banner></Banner> : <img src={strBanner} alt="" />} */}
                 <div className="row card-style d-flex align-items-center">
                     <div className="col-md-6">
